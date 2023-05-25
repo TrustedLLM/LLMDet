@@ -62,7 +62,14 @@ print(result)
 
 ### Citation
 ```bibtex
-
+@misc{wu2023llmdet,
+      title={LLMDet: A Large Language Models Detection Tool}, 
+      author={Kangxi Wu and Liang Pang and Huawei Shen and Xueqi Cheng and Tat-Seng Chua},
+      year={2023},
+      eprint={2305.15004},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
 ```
 
 
