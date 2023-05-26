@@ -27,7 +27,7 @@ Code is compatible with Python >=3.8
 
 ### Main Functions
 
-Currently, it is supported to determine whether the text comes from GPT-2, OPT, UniLM or Human-write.
+Currently, it is supported to determine whether the text comes from GPT-2, LLaMA, BART, OPT, UniLM, T5, Bloom, GPT-neo or Human-write.
 
 #### Examples
 ```python
@@ -57,10 +57,12 @@ print(result)
 ```
 ### TODO List
   - [x] Extend the detection models to LLaMA, T5, Bart and Vicuna.
-  - [ ] Compress the project.
-  - [ ] Add more experimental performnce results.
+  - [ ] Design an interface for the LLM holder adding their model to the project.
+  - [ ] Illustrate more experimental performnce results.
+  - [ ] Improve the algorithm performance and efficiency.
 
 ### Citation
+If you use LLMDet in your research, please use the following BibTex entry.
 ```bibtex
 @misc{wu2023llmdet,
       title={LLMDet: A Large Language Models Detection Tool}, 
