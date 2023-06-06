@@ -56,7 +56,7 @@ print(result)
 }]
 ```
 ### TODO List
-  - [x] Extend the detection models to LLaMA, T5, Bart and Vicuna.
+  - [ ] Extend the detection models to others.
   - [ ] Design an interface for the LLM holder adding their model to the project.
   - [ ] Illustrate more experimental performnce results.
   - [ ] Improve the algorithm performance and efficiency.
