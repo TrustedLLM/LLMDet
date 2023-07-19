@@ -9,6 +9,13 @@ from lightgbm import Booster
 
 
 def load_probability():
+    """
+    The `load_probability()` is utilized to load the dictionary required for LLMDet from the Hugging Face repository.
+    The initial loading process incurs a certain time overhead.
+    """
+
+    # The initial utilization of LLMDet involves loading the dictionary file from HuggingFace.
+    # And subsequently caching it in the local cache for future reference.
     dm = datasets.DownloadManager()
     files = dm.download_and_extract('https://huggingface.co/datasets/TryMore/n_grams_probability/resolve/main/n-grams_probability.tar.gz')
     model = ["gpt2", "opt", "unilm", "llama", "bart", "t5", "bloom", "neo", "vicuna" , "gpt2_large", "opt_3b"]
@@ -17,10 +24,13 @@ def load_probability():
         n_grams = np.load(f'{files}/npz/{item}.npz', allow_pickle=True)
         global_vars[item] = n_grams["t5"]
 
-# Calculate the perplexity of text.
-def perplexity(text_set_token_ids, n_grams_probability, vocab_size):
 
-    # Calculate proxy perplexity value for test text set
+def perplexity(text_set_token_ids, n_grams_probability, vocab_size):
+    """
+    The `perplexity()` is used to calculate proxy perplexity with dictionary load in `load_probability()`.
+    For each Language Model that has constructed an n-grams dictionary, a corresponding proxy perplexity will be computed."
+    """
+    
     test_perplexity = []
 
     for k in tqdm(range(len(text_set_token_ids))):
@@ -73,8 +83,12 @@ def perplexity(text_set_token_ids, n_grams_probability, vocab_size):
 
     return test_perplexity
 
-# Detect function
+
 def detect(text):
+     """
+    The `detect()` is used to determine whether the given text comes from GPT-2, LLaMA, BART, OPT, UniLM, T5, Bloom, GPT-neo, or Human-write.
+    """
+
     # Determine whether the input is a single text or a collection of text.
     if isinstance(text, str):
         test_text = [text]
