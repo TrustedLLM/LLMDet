@@ -1,4 +1,4 @@
-## 🪬 LLMDet：A Large Language Models Detection Tool | [Paper](https://arxiv.org/abs/2305.15004)
+## 🪬 LLMDet：A Third Party Large Language Models Generated Text Detection Tool | [Paper](https://arxiv.org/abs/2305.15004)
 
 LLMDet is a text detection tool that can identify which generated sources the text came from (e.g. large language model or human-write). The core idea of the detection algorithm is to use the n-grams probability sampled from specified language model to calculate proxy perplexity of large language models, and use the proxy perplexity as a feature to train a text classifier.
 
