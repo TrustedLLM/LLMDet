@@ -18,7 +18,8 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-__version__ = "1.0.3"
+__version__ = "1.1.0"
 
 from .detector import load_probability
 from .detetcor import detect
+from .extender import extend
