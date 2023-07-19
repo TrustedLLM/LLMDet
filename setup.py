@@ -5,16 +5,15 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="llmdet",
-    version="1.0.4",
+    version="1.1.0",
     author="Kangxi Wu, Liang Pang",
     author_email="wukx0901@gmail.com",
-    description="LLMDet: A Large Language Models Detection Tool",
+    description="LLMDet: A Third Party Large Language Models Generated Text Detection Tool",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/cansee5/LLMDet",
     packages=setuptools.find_packages(),
     install_requires=[
-            'transformers>=4.29.0',
             'nltk',
             'lightgbm',
             'numpy',
