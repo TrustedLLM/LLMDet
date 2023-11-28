@@ -17,7 +17,7 @@ setuptools.setup(
             'nltk',
             'lightgbm',
             'numpy',
-            'sklearn',
+            'scikit-learn',
             'tqdm',
             'argparse',
         ],
