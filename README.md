@@ -63,12 +63,23 @@ print(result)
 ### Citation
 If you use LLMDet in your research, please use the following BibTex entry.
 ```bibtex
-@inproceedings{wu2023llmdet,
-      title={LLMDet: A Third Party Large Language Models Generated Text Detection Tool}, 
-      author={Kangxi Wu and Liang Pang and Huawei Shen and Xueqi Cheng and Tat-Seng Chua},
-      year={2023},
-      booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
-      publisher = "Association for Computational Linguistics",
+@inproceedings{wu-etal-2023-llmdet,
+    title = "{LLMD}et: A Third Party Large Language Models Generated Text Detection Tool",
+    author = "Wu, Kangxi  and
+      Pang, Liang  and
+      Shen, Huawei  and
+      Cheng, Xueqi  and
+      Chua, Tat-Seng",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-emnlp.139",
+    pages = "2113--2133",
 }
 ```
 
