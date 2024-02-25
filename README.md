@@ -11,8 +11,9 @@ We believe that a practical LLM detection tool needs to have the following capab
 4. **Extendibility**: Our project can easily adapt to newly proposed large language models.
 
 ### Framework
+![Framework](https://github.com/TrustedLLM/LLMDet/blob/main/Framework.pdf)
 
-
+The detailed processes of the proposed tool LLMDet. It contains two main phases, dictionary construction and text detection. The dictionary construction phase is carried out offline by us or provided by the model holder,  independent of external systems. The text detection phase can be accessed by the tool user who, as a third party, performs text detection without holding the model.
 
 ### Installation Notes
 A package for large language model-generated text detection tool.
@@ -62,6 +63,10 @@ print(result)
 ```
 ### TODO List
   - [ ] Improve the algorithm performance and efficiency.
+
+### [The Generated-Text Detection Tool of Chinese LLMs](https://github.com/thulx18/Detect_Texts_of_CN_LLMs)
+
+
 
 ### Citation
 If you use LLMDet in your research, please use the following BibTex entry.
