@@ -65,6 +65,7 @@ print(result)
   - [ ] Improve the algorithm performance and efficiency.
 
 ### [The Generated-Text Detection Tool of Chinese LLMs](https://github.com/thulx18/Detect_Texts_of_CN_LLMs)
+Provided by thulx18.
 
 
 
